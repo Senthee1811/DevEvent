@@ -115,7 +115,7 @@ const EventDetailsPage = async ({ params }: { params: Promise<{ slug: string }>}
           <h2>Similar Events</h2>
           <div className="events">
             {similarEvents.length > 0 && similarEvents.map((similarEvent: IEvent) => (
-              <EventCard {...similarEvents} key={similarEvent.title} />
+              <EventCard {...similarEvent} key={similarEvent.title} />
             ))}
           </div>
         </div>
@@ -124,4 +124,4 @@ const EventDetailsPage = async ({ params }: { params: Promise<{ slug: string }>}
   )
 }
 
-export default EventDetailsPage;
+export default EventDetailsPage; 
